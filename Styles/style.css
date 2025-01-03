@@ -20,6 +20,7 @@ body {
 
 h1 {
     text-align: center;
+    margin-top: 1rem;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -38,6 +39,9 @@ form input.todo-input {
     border-radius: 5px;
     padding: 10px;
 }
+form input.todo-input:hover {
+    background-color: #dadada;
+}
 
 form button.todo-button {
     background-color: #0078d7;
@@ -49,12 +53,14 @@ form button.todo-button {
 
 form button.todo-button:hover {
     background-color: #005bb5;
+    cursor: pointer;
 }
 
 ul.todo-list {
     list-style: none;
     margin-bottom: 10px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
@@ -66,16 +72,22 @@ li>input {
     font-size: 1rem;
 }
 
-.todo-list input[type='checkbox']:checked + span {
+.todo-list input[type='checkbox']:checked + span.task-name {
     text-decoration: line-through;
     background-color: #d9534f;
     color: #ffffff;
     border-radius: 5px;
 }
 
-.todo-list button:hover {
-    background-color: #c9302c;
+.todo-list button {
+    margin-left: 5px;
     padding: 5px 10px;
+    background-color: #c9302c;
+    border-radius: 5px;
+}
+.todo-list button:hover {
+    cursor: pointer;
+    background-color: #921d19;
 }
 
 .todo-info {
