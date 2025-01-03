@@ -1,5 +1,3 @@
-import "./style.css";
-
 /* Main Script for To-Do-App */
 // form
 const formular = document.getElementById("todo-form");
@@ -110,7 +108,7 @@ function loadTodos() {
   let json = localStorage.getItem("todos");
   // Speichert die geholten Daten in einem Json Format
   let todos = JSON.parse(json);
-  if (todos === "") {
+  if (todos === null) {
     tasks = [];
   } else {
     tasks = todos;
