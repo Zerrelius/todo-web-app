@@ -1,38 +1,40 @@
-<!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>To-Do-App</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
 
-        <link rel="stylesheet" href="./Styles/style.css">
-        <script src="script.js" defer></script>
-    </head>
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/main.js" defer></script>
+  </head>
+  <body>
+    <!--<div id="app"></div>
+    <script type="module" src="/src/main.js"></script>-->
 
-    <body>
-        <!-- App Header -->
-        <h1>Meine To-Do-Liste</h1>
+    <!-- App Header -->
+    <h1>Meine To-Do-Liste</h1>
 
-        <!-- App -->
-        <div class="todo-app">
-            <!-- App Form -->
-            <form class="todo-form" id="todo-form" action="">
-                <input type="text" id="todo-input" class="todo-input" name="task-text" placeholder="Neue Aufgabed hinzufügen..." required>
-                <button type="submit" id="todo-button" class="todo-button">Aufgabe hinzufügen</button>
-            </form>
+    <!-- App -->
+    <div class="todo-app">
+        <!-- App Form -->
+        <form class="todo-form" id="todo-form" action="">
+            <input type="text" id="todo-input" class="todo-input" name="task-text" placeholder="Neue Aufgabed hinzufügen..." required>
+            <button type="submit" id="todo-button" class="todo-button">Aufgabe hinzufügen</button>
+        </form>
 
-            <!-- App To-Do-Task List -->
-            <ul class="todo-list" id="todo-list">
-                <!--Elemente für die einzelnen Aufgaben: Checkbox für erledigt; span für Aufgabentext; button zum löschen-->
-                <!-- <li><input class="check-box" id="check-box" type="checkbox" aria-label="Aufgabe erledigen">
-                    <span class="task-name" id="task-name">Aufgabentext</span>
-                    <button class="delete-button" id="delete-button" aria-label="Aufgabe Löschen">Löschen</button>
-                </li> -->
-            </ul>
+        <!-- App To-Do-Task List -->
+        <ul class="todo-list" id="todo-list">
+            <!--Elemente für die einzelnen Aufgaben: Checkbox für erledigt; span für Aufgabentext; button zum löschen-->
+            <!-- <li><input class="check-box" id="check-box" type="checkbox" aria-label="Aufgabe erledigen">
+                <span class="task-name" id="task-name">Aufgabentext</span>
+                <button class="delete-button" id="delete-button" aria-label="Aufgabe Löschen">Löschen</button>
+            </li> -->
+        </ul>
 
-            <!-- App To-Do-Info -->
-            <div class="todo-info"></div>
-        </div>
-
-    </body>
+        <!-- App To-Do-Info -->
+        <div class="todo-info"></div>
+    </div>
+  </body>
 </html>
